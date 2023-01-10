@@ -1,8 +1,24 @@
+# Horned Beasts
+
+This is a React App that lets you view different horned animals.
+
+## Time Estimates
+
+Number and name of feature: Feature #1: Display Images
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Horned Beasts
 
 In the project directory, you can run:
 
