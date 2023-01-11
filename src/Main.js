@@ -8,6 +8,7 @@ class Main extends React.Component {
 
             <HornedBeast  title="TitleOne"  imageUrl="w.fakelink.com" description="fakeAF"/>
             <HornedBeast  title="TitleTwo"  imageUrl="w.fakelink2.com" description="fakeAFToo"/>
+
             </>
         )
         }
