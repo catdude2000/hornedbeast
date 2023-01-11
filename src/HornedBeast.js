@@ -6,7 +6,7 @@ class HornedBeast extends React.Component {
         super(props);
         this.state = {
             hearts: 0,
-            beenHearted: false
+            // beenHearted: false
 
         }
     }
@@ -22,9 +22,10 @@ class HornedBeast extends React.Component {
         return (
             <>
             <h2>{this.props.title}</h2>
-            <img src={this.props.image_url}  alt={this.props.description} title={this.state.title}/>
-            <p>{this.props.description}{this.state.hearts}</p>
-            <p onClick={this.handleHearts}>Click here to give these beastss love!</p>
+            <img src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
+            <p>{this.props.description}</p>
+            <p>a heart {this.state.hearts}</p>
+            <p onClick={this.handleHearts}>Click here to give these beasts love!</p>
             </>
         )
     }

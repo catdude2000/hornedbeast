@@ -17,9 +17,6 @@ class Main extends React.Component {
             <>
             {beastArray}
 
-            {/* <HornedBeast  title={title}  imageUrl="w.fakelink.com" description="fakeAF" key=index />
-            <HornedBeast  title="TitleTwo"  imageUrl="w.fakelink2.com" description="fakeAFToo"/> */}
-
             </>
         )
         }
