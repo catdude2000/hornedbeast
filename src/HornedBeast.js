@@ -1,4 +1,4 @@
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 
@@ -24,7 +24,7 @@ class HornedBeast extends React.Component {
         return (
             <>
             <h2>{this.props.title}</h2>
-            <img src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
+            <Image src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
             <p>{this.props.description}</p>
             <p>💖{this.state.hearts}</p>
             <Button onClick={this.handleHearts}>Click here to give these beasts love!</Button>
