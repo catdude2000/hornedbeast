@@ -4,15 +4,25 @@ This is a React App that lets you view different horned animals.
 
 ## Time Estimates
 
-Number and name of feature: Feature #1: Display Images
+### Number and name of feature: Feature #1: Display Images
 
 Estimate of time needed to complete: 45 minutes
 
-Start time: _____
+Start time: 6:20PM
 
-Finish time: _____
+Finish time: 6:40PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 20 minutes
+
+### Number and name of feature: Feature #2: Allow users to favorite individual beasts
+
+Estimate of time needed to complete: 35 minutes
+
+Start time: 6:44PM
+
+Finish time:
+
+Actual time needed to complete:
 
 # Getting Started with Create React App
 
