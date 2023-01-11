@@ -20,7 +20,17 @@ Estimate of time needed to complete: 35 minutes
 
 Start time: 6:44PM
 
-Finish time:
+Finish time: 7:11
+
+Actual time needed to complete: 27 minutes
+
+### Number and name of feature: Feature #3:Bootstrap
+
+Estimate of time needed to complete: 25 minutes
+
+Start time: 7:15
+
+Finish time: 
 
 Actual time needed to complete:
 
@@ -94,3 +104,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Sources
+
+<https://react-bootstrap.github.io/getting-started/theming/>

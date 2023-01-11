@@ -1,4 +1,7 @@
+import { Button } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+
 
 class HornedBeast extends React.Component {
 
@@ -6,7 +9,6 @@ class HornedBeast extends React.Component {
         super(props);
         this.state = {
             hearts: 0,
-            // beenHearted: false
 
         }
     }
@@ -24,8 +26,8 @@ class HornedBeast extends React.Component {
             <h2>{this.props.title}</h2>
             <img src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
             <p>{this.props.description}</p>
-            <p>a heart {this.state.hearts}</p>
-            <p onClick={this.handleHearts}>Click here to give these beasts love!</p>
+            <p>💖{this.state.hearts}</p>
+            <Button onClick={this.handleHearts}>Click here to give these beasts love!</Button>
             </>
         )
     }
