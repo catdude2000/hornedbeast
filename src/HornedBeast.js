@@ -26,9 +26,8 @@ class HornedBeast extends React.Component {
             <h2>{this.props.title}</h2>
             <img src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
             <p>{this.props.description}</p>
-            <p>a heart {this.state.hearts}</p>
+            <p>💖{this.state.hearts}</p>
             <Button onClick={this.handleHearts}>Click here to give these beasts love!</Button>
-            {/* <Button */}
             </>
         )
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import data from './data.json';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Main extends React.Component {
     render() {
@@ -15,7 +16,19 @@ class Main extends React.Component {
 
         return(
             <>
-            {beastArray}
+            <Container>
+                <Row>
+                    <Col>
+                        {beastArray}
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        {beastArray}
+                    </Col>
+                </Row>
+            </Container>
+            
 
             </>
         )
