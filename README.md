@@ -28,11 +28,11 @@ Actual time needed to complete: 27 minutes
 
 Estimate of time needed to complete: 25 minutes
 
-Start time: 7:15
+Start time: 7:15PM-8:35PM 6:00PM-
 
-Finish time: 
+Finish time:6:22PM
 
-Actual time needed to complete:
+Actual time needed to complete: 1 hour 42 minutes
 
 # Getting Started with Create React App
 
