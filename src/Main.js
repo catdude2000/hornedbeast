@@ -13,23 +13,16 @@ class Main extends React.Component {
             )
         })
 
-
         return(
             <>
             <Container>
                 <Row>
-                    <Col>
-                        {beastArray}
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        {beastArray}
-                    </Col>
+                {data.map((beast, index) => (
+                    <HornedBeast style={{width:'30%'}} title={beast.title}  imageUrl={beast.image_url} description={beast.description} key={index} />
+                    ))
+                }
                 </Row>
             </Container>
-            
-
             </>
         )
         }
