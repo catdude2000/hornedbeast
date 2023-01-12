@@ -1,7 +1,7 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import data from './data.json';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 class Main extends React.Component {
     render() {
