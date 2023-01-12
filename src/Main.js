@@ -20,7 +20,7 @@ class Main extends React.Component {
                 <Row>
                 {data.map((beast, index) => (
                     // <Col>
-                         <HornedBeast title={beast.title}  imageUrl={beast.image_url} description={beast.description} key={index} />
+                         <HornedBeast style={{width:'30%'}} title={beast.title}  imageUrl={beast.image_url} description={beast.description} key={index} />
                     // </Col>
                 ))}
                 </Row>

@@ -23,11 +23,13 @@ class HornedBeast extends React.Component {
     render() {
         return (
             <>
+            <div style={{width:'30%'}}>
             <h2>{this.props.title}</h2>
-            <Image src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
+            <Image style={{width:'100%'}} src={this.props.imageUrl}  alt={this.props.description} title={this.state.title}/>
             <p>{this.props.description}</p>
             <p>💖{this.state.hearts}</p>
             <Button onClick={this.handleHearts}>Click here to give these beasts love!</Button>
+            </div>
             </>
         )
     }
