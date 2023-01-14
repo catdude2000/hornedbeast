@@ -36,11 +36,11 @@ Actual time needed to complete: 1 hour 42 minutes
 
 # Horned Beasts Lab 3
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature #1: Display a Modal
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 1:37PM
 
 Finish time: _____
 

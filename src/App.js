@@ -4,6 +4,7 @@ import Main from './Main';
 import Footer from './Footer';
 import React from 'react';
 import { Modal } from 'react-bootstrap';
+import data from './data.json'
 
 class App extends React.Component {
   constructor(props){
@@ -29,6 +30,7 @@ render () {
       <Header/>
       <Main
       //create/name props in this tag to pass them to Main component
+      data={data}
       handleOnShow={this.handleOnShow}
       />
       <Footer/>
