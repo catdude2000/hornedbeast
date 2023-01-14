@@ -5,6 +5,7 @@ import Footer from './Footer';
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 import data from './data.json'
+import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
   constructor(props){
@@ -34,14 +35,8 @@ render () {
       handleOnShow={this.handleOnShow}
       />
       <Footer/>
-      {/* Modal, make seperate slected beast component for below modal */}
-      <Modal show={this.state.showModal} 
-      // onHide={this}
-      >
-        <Modal.Header>
-          <Modal.Title>{this.state.selectedBeast}</Modal.Title>
-        </Modal.Header>
-      </Modal>
+      <SelectedBeast/>
+ 
     </div>
   );
 }
