@@ -19,6 +19,9 @@ class HornedBeast extends React.Component {
         })
     }
 
+    helpHandleOnShow = () => {
+        this.props.handleOnShow(this.props.title)
+    }
 
     render() {
         return (
