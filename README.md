@@ -40,7 +40,7 @@ Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 1:37PM
+Start time: 1:37PM-2:00PM 4:00PM-
 
 Finish time: _____
 

@@ -3,7 +3,6 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import React from 'react';
-import { Modal } from 'react-bootstrap';
 import data from './data.json'
 import SelectedBeast from './SelectedBeast';
 
@@ -12,30 +11,36 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      selectedBeast: ''
+      modalBeast: ''
     }
   }
 
+
 handleOnShow () {
-  this.setState{
-    showModal: true
-  }
+  this.setState({
+    showModal: true,
+    // modalBeast: modalBeast
+  });
 }
 
+handleClose () {
+  this.setState({
+    showModal: false
+  });
+}
 
 render () {
   return (
-    <div className="App" 
-    // onClick={this.handleOnShow}
-    >
+    <div className="App">
       <Header/>
       <Main
-      //create/name props in this tag to pass them to Main component
+      modalBeast={this.modalBeast}
+      // handleOnShow={this.handleOnShow}
       data={data}
-      handleOnShow={this.handleOnShow}
       />
       <Footer/>
-      <SelectedBeast/>
+      <SelectedBeast
+      handleOnShow={this.handleOnShow}/>
  
     </div>
   );
