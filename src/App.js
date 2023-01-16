@@ -15,6 +15,11 @@ class App extends React.Component {
     }
   }
 
+handleClose () {
+  this.setState({
+    showModal: false
+  });
+}
 
 handleOnShow () {
   this.setState({
@@ -23,24 +28,23 @@ handleOnShow () {
   });
 }
 
-handleClose () {
-  this.setState({
-    showModal: false
-  });
-}
+
 
 render () {
   return (
     <div className="App">
       <Header/>
       <Main
-      modalBeast={this.modalBeast}
+      // modalBeast={this.modalBeast}
       // handleOnShow={this.handleOnShow}
       data={data}
       />
       <Footer/>
       <SelectedBeast
-      handleOnShow={this.handleOnShow}/>
+      data={data}
+      handleOnShow={this.handleOnShow}
+      handleClose={this.handleClose}
+      />
  
     </div>
   );

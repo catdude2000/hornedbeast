@@ -1,9 +1,7 @@
-import { Button, Card, Image } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import React from 'react';
 
-
 class HornedBeast extends React.Component {
-
     constructor(props){
         super(props);
         this.state = {
@@ -24,9 +22,9 @@ class HornedBeast extends React.Component {
     render() {
         return (
             <>
-            <Card style={{width:'30%'}}>
+            <Card style={{width:'30%'}} onClick={this.clickHandleOnShow}>
                 <h2>{this.props.title}</h2>
-                <Card.Img style={{width: '100%'}} src={this.props.imageUrl}  alt={this.props.description} title={this.state.title} onClick={this.clickHandleOnShow}/>
+                <Card.Img style={{width: '100%'}} src={this.props.imageUrl}  alt={this.props.description} title={this.state.title} />
                 <p>{this.props.description}</p>
                 <p>💖{this.state.hearts}</p>
                 <Button onClick={this.handleHearts}>Click here to give these beasts love!

@@ -1,14 +1,14 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import { Container, Row } from 'react-bootstrap';
-// import SelectedBeast from './SelectedBeast';
 
 class Main extends React.Component {
     render() {
         let beastArray = [];
         this.props.data.forEach((newBeast, index) => {
             beastArray.push(
-                <HornedBeast title={newBeast.title}  imageUrl={newBeast.image_url} description={newBeast.description} key={index} handleOnShow={this.props.handleOnShow} 
+                <HornedBeast title={newBeast.title}  imageUrl={newBeast.image_url} description={newBeast.description} key={index} 
+                // handleOnShow={this.props.handleOnShow} 
                 />
             )
         })
@@ -25,6 +25,5 @@ class Main extends React.Component {
             </>
         )
         }
-    
 }
 export default Main;
