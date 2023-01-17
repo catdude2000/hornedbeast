@@ -11,7 +11,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      modalBeast: ''
     }
   }
 
@@ -32,7 +31,6 @@ render () {
     <div className="App">
       <Header/>
       <Main
-      // modalBeast={this.modalBeast}
       handleOnShow={this.handleOnShow}
       data={data}
       />
