@@ -11,19 +11,16 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      modalBeast: ''
     }
   }
 
-
-handleOnShow () {
+handleOnShow = () => {
   this.setState({
     showModal: true,
-    // modalBeast: modalBeast
   });
 }
 
-handleClose () {
+handleClose = () => {
   this.setState({
     showModal: false
   });
@@ -34,14 +31,16 @@ render () {
     <div className="App">
       <Header/>
       <Main
-      modalBeast={this.modalBeast}
-      // handleOnShow={this.handleOnShow}
+      handleOnShow={this.handleOnShow}
       data={data}
       />
+            <SelectedBeast
+      data={data}
+      handleOnShow={this.state.showModal}
+      handleClose={this.handleClose}
+      />
       <Footer/>
-      <SelectedBeast
-      handleOnShow={this.handleOnShow}/>
- 
+
     </div>
   );
 }
