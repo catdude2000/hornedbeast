@@ -24,11 +24,8 @@ handleClose= () => {
 handleOnShow =() => {
   this.setState({
     showModal: true,
-    // modalBeast: 
   });
 }
-
-
 
 render () {
   return (
@@ -45,7 +42,6 @@ render () {
       handleOnShow={this.handleOnShow}
       handleClose={this.handleClose}
       />
- 
     </div>
   );
 }
