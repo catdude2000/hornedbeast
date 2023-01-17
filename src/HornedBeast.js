@@ -15,14 +15,19 @@ class HornedBeast extends React.Component {
         })
     }
 
-    // clickHandleOnShow = () => {
-    //     this.props.handleOnShow(
+    clickHandleOnShow = () => {
+        this.props.handleOnShow(
+            this.props.title, 
+            this.props.imageUrl, 
+            this.props.description)
+    // secondClickHandleOnShow = () => {
+    //     this.props.clickHandleOnShow(
     //         this.props.title, 
-    //         // this.props.imageUrl, 
-    //         // this.props.description,
+    //         this.props.imageUrl, 
+    //         this.props.description,
     //         console.log(this.props.title, this.props.description, 'title and description'))
     // };
-
+        }
     render() {
         return (
             <>
@@ -32,7 +37,7 @@ class HornedBeast extends React.Component {
                     src={this.props.imageUrl} 
                     alt={this.props.description} 
                     title={this.state.title}
-                    // onClick={this.clickHandleOnShow}
+                    onClick={this.clickHandleOnShow}
                     />
                     <p>{this.props.description}</p>
                     <p>💖{this.state.hearts}</p>
