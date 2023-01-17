@@ -1,7 +1,6 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 import { Container, Row } from "react-bootstrap";
-// import SelectedBeast from './SelectedBeast';
 
 class Main extends React.Component {
   render() {
@@ -11,13 +10,14 @@ class Main extends React.Component {
     return (
       <>
         <Container>
-          <Row>
+          <Row lg={4} md={3} sm={2} xs={1}>
             {this.props.data.map((beast, index) => (
               <HornedBeast
                 title={beast.title}
                 imageUrl={beast.image_url}
                 description={beast.description}
                 key={index}
+                beast={beast}
                 handleOnShow={this.props.handleOnShow}
               />
             ))}

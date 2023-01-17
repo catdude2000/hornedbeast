@@ -12,13 +12,15 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       modalBeast: "",
+  
     };
   }
 
-  handleOnShow = () => {
+  handleOnShow = (modalBeast) => {
+  console.log('modal beast back', modalBeast);
     this.setState({
       showModal: true,
-      // modalBeast: modalBeast
+      modalBeast: modalBeast
     });
   }
 
@@ -33,14 +35,17 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main
-          // modalBeast={this.modalBeast}
           handleOnShow={this.handleOnShow}
           data={data}
         />
         <Footer />
        
        
-        <SelectedBeast handleOnShow={this.handleOnShow} />
+        <SelectedBeast
+         onHide={this.handleClose}
+         show={this.state.showModal} 
+         modalBeast={this.state.modalBeast} 
+         />
       </div>
     );
   }
