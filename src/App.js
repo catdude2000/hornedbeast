@@ -7,7 +7,7 @@ import data from './data.json'
 import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       showModal: false,
@@ -16,35 +16,36 @@ class App extends React.Component {
   }
 
 
-handleOnShow () {
-  this.setState({
-    showModal: true,
-    // modalBeast: modalBeast
-  });
-}
+  handleOnShow = () => {
+    this.setState({
+      showModal: true,
+      // modalBeast: modalBeast
+    });
+  }
 
-handleClose () {
-  this.setState({
-    showModal: false
-  });
-}
+  handleClose = () => {
+    this.setState({
+      showModal: false
+    });
+  }
 
-render () {
-  return (
-    <div className="App">
-      <Header/>
-      <Main
-      modalBeast={this.modalBeast}
-      // handleOnShow={this.handleOnShow}
-      data={data}
-      />
-      <Footer/>
-      <SelectedBeast
-      handleOnShow={this.handleOnShow}/>
- 
-    </div>
-  );
-}
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Main
+          modalBeast={this.modalBeast}
+          handleOnShow={this.handleOnShow}
+          data={data}
+        />
+        <Footer />
+        <SelectedBeast
+          handleOnShow={this.state.showModal}
+          handleOnClose={this.handleClose }
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
