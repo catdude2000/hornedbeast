@@ -15,7 +15,7 @@ class App extends React.Component {
     };
   }
 
-  handleOnShow= () => {
+  handleOnShow = () => {
     this.setState({
       showModal: true,
       // modalBeast: modalBeast
@@ -33,11 +33,13 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main
-          modalBeast={this.modalBeast}
-          // handleOnShow={this.handleOnShow}
+          // modalBeast={this.modalBeast}
+          handleOnShow={this.handleOnShow}
           data={data}
         />
         <Footer />
+       
+       
         <SelectedBeast handleOnShow={this.handleOnShow} />
       </div>
     );
