@@ -2,11 +2,11 @@ import { Button, Card } from 'react-bootstrap';
 import React from 'react';
 
 class HornedBeast extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             hearts: 0,
-        }
+        };
     }
 
     handleHearts = () => {
@@ -16,20 +16,29 @@ class HornedBeast extends React.Component {
     }
 
     clickHandleOnShow = () => {
-        this.props.handleOnShow(this.props.title, this.props.imageUrl, this.props.description)
+        this.props.handleOnShow(
+            this.props.title, 
+            this.props.imageUrl, 
+            this.props.description)
     };
 
     render() {
         return (
             <>
-            <Card style={{width:'30%'}} onClick={this.clickHandleOnShow}>
-                <h2>{this.props.title}</h2>
-                <Card.Img style={{width: '100%'}} src={this.props.imageUrl}  alt={this.props.description} title={this.state.title} />
-                <p>{this.props.description}</p>
-                <p>💖{this.state.hearts}</p>
-                <Button onClick={this.handleHearts}>Click here to give these beasts love!
-                </Button>
-            </Card>
+                <Card style={{ width: '30%' }} >
+                    <h2>{this.props.title}</h2>
+                    <Card.Img style={{ width: '100%' }} 
+                    src={this.props.imageUrl} 
+                    alt={this.props.description} 
+                    title={this.state.title}
+                    onClick={this.clickHandleOnShow}
+                    />
+                    <p>{this.props.description}</p>
+                    <p>💖{this.state.hearts}</p>
+                    
+                    <Button onClick={this.handleHearts}>Click here to give these beasts love!
+                    </Button>
+                </Card>
             </>
         )
     }

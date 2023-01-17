@@ -3,12 +3,6 @@ import { Modal, Image } from 'react-bootstrap';
 
 class SelectedBeast extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      
-    }
-  }
 
     render () {
         return (
@@ -17,8 +11,8 @@ class SelectedBeast extends React.Component {
               <Modal.Title>dsfsdf{this.props.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              {/* <Image src={this.props.beast.imageUrl} /> */}
-              {/* {this.props.beast.description} */}
+              <Image src={this.props.imageUrl} />
+              {this.props.description}
             </Modal.Body>
             <Modal.Footer>
               onClick={this.props.handleClose}
