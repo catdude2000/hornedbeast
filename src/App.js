@@ -17,7 +17,7 @@ class App extends React.Component {
 handleOnShow = (modalBeast) => {
   this.setState({
     showModal: true,
-    modalBeast: modalBeast
+    beast: modalBeast
   });
 }
 

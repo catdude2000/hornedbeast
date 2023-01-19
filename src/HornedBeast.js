@@ -16,10 +16,7 @@ class HornedBeast extends React.Component {
     }
 
     clickHandleOnShow = () => {
-        this.props.handleOnShow(
-            this.props.title, 
-            this.props.imageUrl, 
-            this.props.description)
+        this.props.handleOnShow(this.props.beast)
 
         }
     render() {
