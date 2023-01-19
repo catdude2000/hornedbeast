@@ -46,6 +46,8 @@ Finish time: 9:00PM
 
 Actual time needed to complete: 4 hours 23 minutes
 
+# Horned Beasts Lab 4
+
 Number and name of feature: Feature #1: Numbers of Horns
 
 Estimate of time needed to complete: 2 hours
