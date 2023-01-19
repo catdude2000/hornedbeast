@@ -14,7 +14,6 @@ class SelectedBeast extends React.Component {
             <Modal.Body>
                 <Image src={this.props.modalBeast.imageUrl} alt={this.props.modalBeast.description}/>
              
-              
             </Modal.Body>
             <Modal.Footer>{this.props.modalBeast.description}</Modal.Footer>
           </Modal>
