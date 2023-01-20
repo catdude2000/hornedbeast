@@ -1,6 +1,6 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import { Container, ListGroup, Row, Form } from "react-bootstrap";
+import { Container, Row, Form } from "react-bootstrap";
 
 class Main extends React.Component {
     constructor(props) {
@@ -14,25 +14,21 @@ class Main extends React.Component {
         handleSelect = (event) => {
             let selected = event.target.value;
             if (selected === "1") {
-                ///////////////////////////////// .horns??
                 let newData = this.props.data.filter((number) => {
                     return (number.horns.toString() === selected);
                 })
                 this.setState({ sortedHorns: newData });
             }   else if (selected === "2") {
-
                 let newData = this.props.data.filter((number) => {
                     return (number.horns.toString() === "2");
                 })
                 this.setState({ sortedHorns: newData });
             }   else if (selected === "3") {
-
                 let newData = this.props.data.filter((number) => {
                     return (number.horns.toString() === "3");
                 })
                 this.setState({ sortedHorns: newData });
             } else if (selected === "100") {
-
                 let newData = this.props.data.filter((number) => {
                     return (number.horns.toString() === "100");
                 })
@@ -44,18 +40,10 @@ class Main extends React.Component {
         };
     render() {
 
-        // let dispHorns = this.props.sortedHorns.map((number, index) => { 
-        //     return <ListGroup.Item key={index}>{number}</ListGroup.Item>})
-
         return(
             <>
-            {/* <ListGroup>{dispHorns}</ListGroup> */}
             <Form onSubmit={this.handleSubmit}>
-                <Form.Label>
-                    {/* //////////////////?????????? need label? */}
-                </Form.Label>
                 <Form.Select name='selected' onChange={this.handleSelect}>
-                    {/* <option value="0">0</option> */}
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
