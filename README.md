@@ -52,21 +52,12 @@ Number and name of feature: Feature #1: Numbers of Horns
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 8:45PM-
+Start time: 8:45PM-9:05PM 5:30PM-
 
-Finish time: _____
+Finish time: 6:45PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hour 35 minutes
 
-Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
 
 ## Sources
 
