@@ -13,21 +13,30 @@ class Main extends React.Component {
 
         handleSelect = (event) => {
             let selected = event.target.value;
-            if (selected === 1) {
+            if (selected === "1") {
                 ///////////////////////////////// .horns??
-                let newData = this.props.data.horns.filter((number) => number);
+                let newData = this.props.data.filter((number) => {
+                    return (number.horns.toString() === selected);
+                })
                 this.setState({ sortedHorns: newData });
-            }   else if (selected === 2) {
-                ///////////////////////////////// .horns??
-                let newData = this.props.data.horns.filter((number) => number);
+            }   else if (selected === "2") {
+
+                let newData = this.props.data.filter((number) => {
+                    return (number.horns.toString() === "2");
+                })
                 this.setState({ sortedHorns: newData });
-            }   else if (selected === 3) {
-                ///////////////////////////////// .horns??
-                let newData = this.props.data.horns.filter((number) => number);
+            }   else if (selected === "3") {
+
+                let newData = this.props.data.filter((number) => {
+                    return (number.horns.toString() === "3");
+                })
                 this.setState({ sortedHorns: newData });
-            } else if (selected === 100) {
-                ///////////////////////////////// .horns??
-                let newData = this.props.data.horns.filter((number) => number);
+            } else if (selected === "100") {
+
+                let newData = this.props.data.filter((number) => {
+                    return (number.horns.toString() === "100");
+                })
+                console.log("selected 100")
                 this.setState({ sortedHorns: newData });
             } else {
                 this.setState({ sortedHorns: this.props.data });
@@ -46,11 +55,11 @@ class Main extends React.Component {
                     {/* //////////////////?????????? need label? */}
                 </Form.Label>
                 <Form.Select name='selected' onChange={this.handleSelect}>
-                    <option value={0}>0</option>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={100}>100</option>
+                    {/* <option value="0">0</option> */}
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="100">100</option>
                 </Form.Select>
             </Form>
             <Container>
