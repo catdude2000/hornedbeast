@@ -40,31 +40,24 @@ Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 1:37PM-2:00PM 4:00PM-
+Start time: 1:37PM-2:00PM 4:00PM-5:00PM 6:00PM-
 
-Finish time: _____
+Finish time: 9:00PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 4 hours 23 minutes
 
-Number and name of feature: ________________________________
+# Horned Beasts Lab 4
 
-Estimate of time needed to complete: _____
+Number and name of feature: Feature #1: Numbers of Horns
 
-Start time: _____
+Estimate of time needed to complete: 2 hours
 
-Finish time: _____
+Start time: 8:45PM-9:05PM 5:30PM-
 
-Actual time needed to complete: _____
+Finish time: 6:45PM
 
-Number and name of feature: ________________________________
+Actual time needed to complete: 1 hour 35 minutes
 
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
 
 ## Sources
 

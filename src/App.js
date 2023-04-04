@@ -1,10 +1,10 @@
 import "./App.css";
 import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import React from "react";
-import data from "./data.json";
-import SelectedBeast from "./SelectedBeast";
+import Main from './Main';
+import Footer from './Footer';
+import React from 'react';
+import data from './data.json'
+import SelectedBeast from './SelectedBeast';
 
 class App extends React.Component {
   constructor(props) {
@@ -49,6 +49,7 @@ class App extends React.Component {
       </div>
     );
   }
+
 }
 
 export default App;
