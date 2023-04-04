@@ -2,6 +2,8 @@ import React from "react";
 import HornedBeast from "./HornedBeast";
 import { Container, Row, Form } from "react-bootstrap";
 
+    // console.log("🚀 ~ file: Main.js:21 ~ Main ~ render ~ handleOnShow",this.props.handleOnShow);
+
 class Main extends React.Component {
     constructor(props) {
         super(props);
@@ -50,24 +52,24 @@ class Main extends React.Component {
                     <option value="100">100</option>
                 </Form.Select>
             </Form>
-            <Container>
-                <Row>
-                {this.state.sortedHorns.map((beast, index) => (
-                    <HornedBeast 
-                    title={beast.title}  
-                    imageUrl={beast.image_url} 
-                    escription={beast.description} 
-                    key={index} 
-                    beast={beast}
-                    handleOnShow={this.props.handleOnShow}
-                    />
-                    ))
-                }
-                </Row>
-            </Container>
+                    <Container>
+          <Row lg={4} md={3} sm={2} xs={1}>
+            {this.props.data.map((beast, index) => (
+              <HornedBeast
+                title={beast.title}
+                imageUrl={beast.image_url}
+                description={beast.description}
+                key={index}
+                beast={beast}
+                handleOnShow={this.props.handleOnShow}
+              />
+            ))}
+          </Row>
+        </Container>
             </>
         )
         }
+
 }
 
 export default Main;
